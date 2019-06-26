@@ -38,7 +38,7 @@ $ npm -v
 
 * **Question:** What is the difference between forking and cloning a repository as opposed to just cloning a repository?
 
-* **Your Answer:**
+* **Your Answer: Forking allows the user to make a copy of a repository on their local Github branch. Cloning allows for you to copy a remote Git repo onto a local machine**
 
 ---
 
@@ -46,7 +46,7 @@ $ npm -v
 
 * **Question:** What does `npm init` do? How does the `-y` flag modify that command?
 
-* **Your Answer:**
+* **Your Answer:** Automatically answers Yes to the set-up questions that are asked in initializing a new project.
 
 ---
 
@@ -54,7 +54,7 @@ $ npm -v
 
 * **Question:** What is the purpose of the following keys? "name", "scripts", "license"
 
-* **Your Answer:**
+* **Your Answer:** Name is the name of the project, scripts are any keywords that will be used to run scripts, and license is the type of license assigned to the project. 
 
 ---
 
@@ -62,7 +62,7 @@ $ npm -v
 
 * **Question:** What is the purpose of the `.gitignore` file? What is the significance of a "dot-file?"
 
-* **Your Answer:**
+* **Your Answer:** These files contain information that will not be committed. 
 
 ---
 
@@ -70,7 +70,7 @@ $ npm -v
 
 * **Question:** From the command line, how can you run this file?
 
-* **Your Answer:**
+* **Your Answer:** node run index.js
 
 ---
 
@@ -78,7 +78,7 @@ $ npm -v
 
 * **Question:** What happens and how is this related to what is in the `package.json` file? 
 
-* **Your Answer:**
+* **Your Answer:** The in the scripts section of the package.json there is the 'test' script which prints out echo "Error: no test specified\" && exit 1. If we had a test file to run, it would run that test. Because our test script just prints this message out, that is what we see in the terminal when running npm test.
 
 ---
 
@@ -86,7 +86,7 @@ $ npm -v
 
 * **Question:** What will you enter on the command line to run that script?
 
-* **Your Answer:**
+* **Your Answer:** npm start
 
 ---
 
@@ -94,7 +94,7 @@ $ npm -v
 
 * **Question:** The same pattern will not work to try and run this script. How can you successfully get this script to run?
 
-* **Your Answer:**
+* **Your Answer:** I tried using a number of commands that are approved for npm and suggested in the console, but only start worked for running this script. Aha! Need to use 'run' if not one of the pre-approved npm words
 
 ---
 
@@ -109,13 +109,13 @@ $ npm -v
   console.log(profile)
   ```
 
-* **Question:** What gets logged? Why?
+* **Question:** What gets logged? Why? My name because it was exported from profile and imported/required in the index.js
 
 * **Your Answer:**
 
 * **Question:** What is `module.exports` and what is its _type_ in JavaScript? What is `require` and what is its _type_ in JavaScript?
 
-* **Your Answer:**
+* **Your Answer:** Functions
 
 ---
 
@@ -123,7 +123,7 @@ $ npm -v
 
 * **Question:** What are some ways you can solve this problem?
 
-* **Your Answer:**
+* **Your Answer:** Put it all in an object
 
 ---
 
@@ -135,7 +135,7 @@ $ npm -v
 
 * **Question:** What is `path` and where does it come from?
 
-* **Your Answer:**
+* **Your Answer:** It's the path of the file that calls path. It comes from the node module.
 
 ---
 
@@ -143,7 +143,7 @@ $ npm -v
 
 * **Question:** What command can you run to install this package?
 
-* **Your Answer:**
+* **Your Answer:** npm i moment
 
 ---
 
@@ -151,7 +151,7 @@ $ npm -v
 
 * **Question:** Do you need to use a `./` to require the package? Why or why not?
 
-* **Your Answer:**
+* **Your Answer:** No because it's in the modules
 
 ---
 
