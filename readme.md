@@ -38,7 +38,7 @@ $ npm -v
 
 * **Question:** What is the difference between forking and cloning a repository as opposed to just cloning a repository?
 
-* **Your Answer:**
+* **Your Answer:** The difference is that cloning simply copies the repo, while forking transfers the repo to your Github account.
 
 ---
 
