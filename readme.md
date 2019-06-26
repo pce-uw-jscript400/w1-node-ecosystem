@@ -38,7 +38,7 @@ $ npm -v
 
 * **Question:** What is the difference between forking and cloning a repository as opposed to just cloning a repository?
 
-* **Your Answer:**
+* **Your Answer:** Forking allows you to copy and make changes to the project while keeping the connection with the original repo. Cloning makes a local repo that is not connected to the original repo.
 
 ---
 
@@ -46,7 +46,7 @@ $ npm -v
 
 * **Question:** What does `npm init` do? How does the `-y` flag modify that command?
 
-* **Your Answer:**
+* **Your Answer:** It created a package.json file with default values. -y says "yes" to everything bc we dont care about the specifics.
 
 ---
 
@@ -54,7 +54,7 @@ $ npm -v
 
 * **Question:** What is the purpose of the following keys? "name", "scripts", "license"
 
-* **Your Answer:**
+* **Your Answer:** Name is the name of the project folder. Scripts is the commands that you want to run (depolyment, start, etc). License is any licenses of opens source stuff you might be using.
 
 ---
 
@@ -62,7 +62,7 @@ $ npm -v
 
 * **Question:** What is the purpose of the `.gitignore` file? What is the significance of a "dot-file?"
 
-* **Your Answer:**
+* **Your Answer:** A dot file indicates a hidden file. A .gitignore file is where you list any other files you want gut to ignore.
 
 ---
 
@@ -70,7 +70,7 @@ $ npm -v
 
 * **Question:** From the command line, how can you run this file?
 
-* **Your Answer:**
+* **Your Answer:** node index.js
 
 ---
 
@@ -78,7 +78,7 @@ $ npm -v
 
 * **Question:** What happens and how is this related to what is in the `package.json` file? 
 
-* **Your Answer:**
+* **Your Answer:** It looks for tests specified in the scripts section fo the package.json file. We get an error bc we dont have any tests specified.  
 
 ---
 
@@ -86,7 +86,7 @@ $ npm -v
 
 * **Question:** What will you enter on the command line to run that script?
 
-* **Your Answer:**
+* **Your Answer:** npm run start
 
 ---
 
@@ -94,7 +94,7 @@ $ npm -v
 
 * **Question:** The same pattern will not work to try and run this script. How can you successfully get this script to run?
 
-* **Your Answer:**
+* **Your Answer:** npm run my-file
 
 ---
 
@@ -111,11 +111,13 @@ $ npm -v
 
 * **Question:** What gets logged? Why?
 
-* **Your Answer:**
+* **Your Answer:** 
+Hello, Node! 
+Sarah
 
 * **Question:** What is `module.exports` and what is its _type_ in JavaScript? What is `require` and what is its _type_ in JavaScript?
 
-* **Your Answer:**
+* **Your Answer:** Exported file content from profile.js and imported it to index.js. "require" is a function that does something with a string, which is a path. "module.exports" is an object.
 
 ---
 
@@ -123,7 +125,7 @@ $ npm -v
 
 * **Question:** What are some ways you can solve this problem?
 
-* **Your Answer:**
+* **Your Answer:** Create variables for each obkect that you want to export, and create an array to export with all variables you want to export.
 
 ---
 
@@ -135,7 +137,7 @@ $ npm -v
 
 * **Question:** What is `path` and where does it come from?
 
-* **Your Answer:**
+* **Your Answer:** Path is part of node. It prints the file path of the project folder.
 
 ---
 
@@ -143,7 +145,7 @@ $ npm -v
 
 * **Question:** What command can you run to install this package?
 
-* **Your Answer:**
+* **Your Answer:** npm install moment
 
 ---
 
@@ -151,7 +153,7 @@ $ npm -v
 
 * **Question:** Do you need to use a `./` to require the package? Why or why not?
 
-* **Your Answer:**
+* **Your Answer:** No, because it is not a file, but a module.
 
 ---
 
