@@ -38,7 +38,7 @@ $ npm -v
 
 * **Question:** What is the difference between forking and cloning a repository as opposed to just cloning a repository?
 
-* **Your Answer:**
+* **Your Answer:** When you Fork the repo then you are adding it under your repository.  Just cloning would two versions of the same repositoty.  If there
 
 ---
 
@@ -46,7 +46,7 @@ $ npm -v
 
 * **Question:** What does `npm init` do? How does the `-y` flag modify that command?
 
-* **Your Answer:**
+* **Your Answer:** NPM initializes the program.  The -y means "Yes," it just assumes yes and moves on.
 
 ---
 
@@ -54,7 +54,7 @@ $ npm -v
 
 * **Question:** What is the purpose of the following keys? "name", "scripts", "license"
 
-* **Your Answer:**
+* **Your Answer:** "name" is the name of the package.  "scripts" is where you would place custom scripts that are used to run the applicatiuons.  "license" is just license.
 
 ---
 
@@ -62,7 +62,7 @@ $ npm -v
 
 * **Question:** What is the purpose of the `.gitignore` file? What is the significance of a "dot-file?"
 
-* **Your Answer:**
+* **Your Answer:** A "dot-file" is files that are ignored.  '.gitignore' is a file where you put files that you want git to ignore, such as API keys.
 
 ---
 
@@ -70,15 +70,15 @@ $ npm -v
 
 * **Question:** From the command line, how can you run this file?
 
-* **Your Answer:**
+* **Your Answer:** Run node index.js
 
 ---
 
 - [ ] Run `npm test` from the command line
 
-* **Question:** What happens and how is this related to what is in the `package.json` file? 
+* **Question:** What happens and how is this related to what is in the `package.json` file?
 
-* **Your Answer:**
+* **Your Answer:** The test failed becuse there is no test specified.
 
 ---
 
@@ -86,7 +86,7 @@ $ npm -v
 
 * **Question:** What will you enter on the command line to run that script?
 
-* **Your Answer:**
+* **Your Answer:** npm start
 
 ---
 
@@ -94,8 +94,7 @@ $ npm -v
 
 * **Question:** The same pattern will not work to try and run this script. How can you successfully get this script to run?
 
-* **Your Answer:**
-
+* **Your Answer:** Because it is not a standard npm script we need to use npm run my-file to be able to run the file sucessfully.
 ---
 
 - [ ] Create a new file called `profile.js`. Inside the file, copy the following but replace `<your-name>` with your name:
@@ -111,11 +110,11 @@ $ npm -v
 
 * **Question:** What gets logged? Why?
 
-* **Your Answer:**
+* **Your Answer:** My mame gets logged, it was exported and imported in with require.
 
 * **Question:** What is `module.exports` and what is its _type_ in JavaScript? What is `require` and what is its _type_ in JavaScript?
 
-* **Your Answer:**
+* **Your Answer:** 'module.exports' is a an object. Require is a build in Node function that loads modules.
 
 ---
 
@@ -124,6 +123,7 @@ $ npm -v
 * **Question:** What are some ways you can solve this problem?
 
 * **Your Answer:**
+You would put the items in an object or an array and package them.
 
 ---
 
@@ -135,7 +135,7 @@ $ npm -v
 
 * **Question:** What is `path` and where does it come from?
 
-* **Your Answer:**
+* **Your Answer:** 'path' pulls in the path of the document and it is an node package that comes with node.
 
 ---
 
@@ -144,6 +144,7 @@ $ npm -v
 * **Question:** What command can you run to install this package?
 
 * **Your Answer:**
+npm install moment
 
 ---
 
@@ -152,7 +153,7 @@ $ npm -v
 * **Question:** Do you need to use a `./` to require the package? Why or why not?
 
 * **Your Answer:**
-
+I did not use a './' to use the package.  We don't have a 'moment' file.  The 'moment' package is what is getting pulled in.
 ---
 
 - [ ] Move your `profile.js` file into a `src/` folder. Update the path in your `index.js` file to ensure everything continues to work.
