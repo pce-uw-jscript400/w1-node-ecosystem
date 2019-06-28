@@ -38,7 +38,7 @@ $ npm -v
 
 * **Question:** What is the difference between forking and cloning a repository as opposed to just cloning a repository?
 
-* **Your Answer:**
+* **Your Answer:** Forking is a request to clone and registers under your username.
 
 ---
 
@@ -46,7 +46,7 @@ $ npm -v
 
 * **Question:** What does `npm init` do? How does the `-y` flag modify that command?
 
-* **Your Answer:**
+* **Your Answer:** Created a package.json file with information about the author, repo, etc.
 
 ---
 
@@ -54,7 +54,9 @@ $ npm -v
 
 * **Question:** What is the purpose of the following keys? "name", "scripts", "license"
 
-* **Your Answer:**
+* **Your Answer:** name = project name
+scripts = runs tests
+license = software license
 
 ---
 
@@ -62,7 +64,7 @@ $ npm -v
 
 * **Question:** What is the purpose of the `.gitignore` file? What is the significance of a "dot-file?"
 
-* **Your Answer:**
+* **Your Answer:** It tells the repo what files to ignore.
 
 ---
 
@@ -70,7 +72,7 @@ $ npm -v
 
 * **Question:** From the command line, how can you run this file?
 
-* **Your Answer:**
+* **Your Answer:** node index.js
 
 ---
 
@@ -78,7 +80,7 @@ $ npm -v
 
 * **Question:** What happens and how is this related to what is in the `package.json` file? 
 
-* **Your Answer:**
+* **Your Answer:** There was no test specified because we didn't have any listed in the package.json. The response is written in the scripts test value.
 
 ---
 
@@ -86,7 +88,7 @@ $ npm -v
 
 * **Question:** What will you enter on the command line to run that script?
 
-* **Your Answer:**
+* **Your Answer:** npm start
 
 ---
 
@@ -94,7 +96,7 @@ $ npm -v
 
 * **Question:** The same pattern will not work to try and run this script. How can you successfully get this script to run?
 
-* **Your Answer:**
+* **Your Answer:** npm run my-file
 
 ---
 
@@ -111,11 +113,12 @@ $ npm -v
 
 * **Question:** What gets logged? Why?
 
-* **Your Answer:**
+* **Your Answer:** Hello, Node! Alex. This is logged because it is exported from profile.js
+
 
 * **Question:** What is `module.exports` and what is its _type_ in JavaScript? What is `require` and what is its _type_ in JavaScript?
 
-* **Your Answer:**
+* **Your Answer:** It is a way of connecting files together. It is a function.
 
 ---
 
@@ -123,7 +126,7 @@ $ npm -v
 
 * **Question:** What are some ways you can solve this problem?
 
-* **Your Answer:**
+* **Your Answer:** Put it in an array {a, b}
 
 ---
 
@@ -135,7 +138,7 @@ $ npm -v
 
 * **Question:** What is `path` and where does it come from?
 
-* **Your Answer:**
+* **Your Answer:** It is the path of the package location and comes from node
 
 ---
 
@@ -143,7 +146,8 @@ $ npm -v
 
 * **Question:** What command can you run to install this package?
 
-* **Your Answer:**
+* **Your Answer:** npm install moment
+
 
 ---
 
@@ -151,7 +155,7 @@ $ npm -v
 
 * **Question:** Do you need to use a `./` to require the package? Why or why not?
 
-* **Your Answer:**
+* **Your Answer:** No, you use require('moment')
 
 ---
 
