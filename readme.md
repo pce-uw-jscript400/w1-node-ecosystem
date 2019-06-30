@@ -39,6 +39,7 @@ $ npm -v
 * **Question:** What is the difference between forking and cloning a repository as opposed to just cloning a repository?
 
 * **Your Answer:**
+Forking copies the repository into another git account; cloning creates a local copy. You can use pull requests to contribute to the original repo after forking it.
 
 ---
 
@@ -47,6 +48,7 @@ $ npm -v
 * **Question:** What does `npm init` do? How does the `-y` flag modify that command?
 
 * **Your Answer:**
+Walks the user through the process of creating a package.json file. The -y flag uses the default values for all options.
 
 ---
 
@@ -55,6 +57,9 @@ $ npm -v
 * **Question:** What is the purpose of the following keys? "name", "scripts", "license"
 
 * **Your Answer:**
+Name: the project name
+Scripts: Scripts that are run by the application.
+License: The license type. Defaults to the ISC license.
 
 ---
 
@@ -63,6 +68,7 @@ $ npm -v
 * **Question:** What is the purpose of the `.gitignore` file? What is the significance of a "dot-file?"
 
 * **Your Answer:**
+A dot-file is any file that's prefixed with a dot. Shows up without a name in Win10. Tells git which files shouldn't be tracked.
 
 ---
 
@@ -71,6 +77,7 @@ $ npm -v
 * **Question:** From the command line, how can you run this file?
 
 * **Your Answer:**
+With the command *node index.js*
 
 ---
 
@@ -79,7 +86,7 @@ $ npm -v
 * **Question:** What happens and how is this related to what is in the `package.json` file? 
 
 * **Your Answer:**
-
+It prints *Error: no test specified* because that's the command given in scripts/test.
 ---
 
 - [ ] Create a new "script" command called "start" that has the following value: `node index.js`
@@ -87,7 +94,7 @@ $ npm -v
 * **Question:** What will you enter on the command line to run that script?
 
 * **Your Answer:**
-
+npm start
 ---
 
 - [ ] Change the name of your "start" script to "my-file"
@@ -95,7 +102,7 @@ $ npm -v
 * **Question:** The same pattern will not work to try and run this script. How can you successfully get this script to run?
 
 * **Your Answer:**
-
+npm can only take one of a list of specific keywords as an argument.
 ---
 
 - [ ] Create a new file called `profile.js`. Inside the file, copy the following but replace `<your-name>` with your name:
@@ -112,11 +119,12 @@ $ npm -v
 * **Question:** What gets logged? Why?
 
 * **Your Answer:**
+Profile.js exports a string which is stored in profile in index.js, then logged to the console.
 
 * **Question:** What is `module.exports` and what is its _type_ in JavaScript? What is `require` and what is its _type_ in JavaScript?
 
 * **Your Answer:**
-
+Module.exports is an object included in every node.js project file by default. Require is a function that returns a file.
 ---
 
 - [ ] We can only export one thing from files when using Node. With that said, export both your name and your birthday from the `profile.js` file.
@@ -124,7 +132,8 @@ $ npm -v
 * **Question:** What are some ways you can solve this problem?
 
 * **Your Answer:**
-
+By putting both items in an object.
+module.exports = { name:'Laura', birthday:'8/17' }
 ---
 
 - [ ] Add the following to your `index.js` file. Then, run your file.
@@ -136,6 +145,7 @@ $ npm -v
 * **Question:** What is `path` and where does it come from?
 
 * **Your Answer:**
+Path is a module that comes with Node.
 
 ---
 
@@ -144,7 +154,7 @@ $ npm -v
 * **Question:** What command can you run to install this package?
 
 * **Your Answer:**
-
+npm i moment
 ---
 
 - [ ] On your own, use this package in the `index.js` file
@@ -152,7 +162,7 @@ $ npm -v
 * **Question:** Do you need to use a `./` to require the package? Why or why not?
 
 * **Your Answer:**
-
+No, because it's a package, not a file. It lives in the node_modules directory.
 ---
 
 - [ ] Move your `profile.js` file into a `src/` folder. Update the path in your `index.js` file to ensure everything continues to work.
