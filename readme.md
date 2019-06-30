@@ -38,7 +38,7 @@ $ npm -v
 
 * **Question:** What is the difference between forking and cloning a repository as opposed to just cloning a repository?
 
-* **Your Answer:**
+* **Your Answer:** When you fork a repository, you duplicate the current state of a repository into a new repository. You take all of the files along and when you clone it, you will now commit changes against that new repository. A clone of a repository would mean you are developing against the repository and any changes would be committed to the original repo. 
 
 ---
 
@@ -46,7 +46,7 @@ $ npm -v
 
 * **Question:** What does `npm init` do? How does the `-y` flag modify that command?
 
-* **Your Answer:**
+* **Your Answer:** `npm init` creates a new npm project/package. It will create a `package.json` file and prompt you to enter the appropriate information. The `-y` flag appears to initialize the package without requiring any user input. It creates the package with default values. 
 
 ---
 
@@ -54,7 +54,7 @@ $ npm -v
 
 * **Question:** What is the purpose of the following keys? "name", "scripts", "license"
 
-* **Your Answer:**
+* **Your Answer:** Name is the title of your package, scripts are a way to shorthand a CLI command or commands for the project, and license is for applying a license to your package that establishes the rules for reuse of your package.
 
 ---
 
@@ -62,7 +62,7 @@ $ npm -v
 
 * **Question:** What is the purpose of the `.gitignore` file? What is the significance of a "dot-file?"
 
-* **Your Answer:**
+* **Your Answer:** `.gitignore` is used to flag to git that certain files should not be included in the repository and should therefore not be watched. A dot file is generally a hidden file in most operating systems. 
 
 ---
 
@@ -70,7 +70,7 @@ $ npm -v
 
 * **Question:** From the command line, how can you run this file?
 
-* **Your Answer:**
+* **Your Answer:** `node index.js`
 
 ---
 
@@ -78,15 +78,15 @@ $ npm -v
 
 * **Question:** What happens and how is this related to what is in the `package.json` file? 
 
-* **Your Answer:**
+* **Your Answer:** It runs the CLI command in the key:value pair for "test" under the scripts key in package.json. In this case, it echos the string and exits.
 
 ---
 
 - [ ] Create a new "script" command called "start" that has the following value: `node index.js`
 
-* **Question:** What will you enter on the command line to run that script?
+* **Question:** What will you enter on the command line to run that script? 
 
-* **Your Answer:**
+* **Your Answer:** `npm start`
 
 ---
 
@@ -94,7 +94,7 @@ $ npm -v
 
 * **Question:** The same pattern will not work to try and run this script. How can you successfully get this script to run?
 
-* **Your Answer:**
+* **Your Answer:** `npm run my-file`
 
 ---
 
@@ -111,11 +111,16 @@ $ npm -v
 
 * **Question:** What gets logged? Why?
 
-* **Your Answer:**
+* **Your Answer:** 
+``` js 
+  Hello, Node!
+  Colin Griffiths
+```
+  The imported value from the exported string is displayed as it is assigned to the variable profile. 
 
 * **Question:** What is `module.exports` and what is its _type_ in JavaScript? What is `require` and what is its _type_ in JavaScript?
 
-* **Your Answer:**
+* **Your Answer:** `module.exports` is an object consisting of the encapsulated code to be made available to other modules. `require()` is a function that retrieves the specified package/module or file.  
 
 ---
 
@@ -123,7 +128,7 @@ $ npm -v
 
 * **Question:** What are some ways you can solve this problem?
 
-* **Your Answer:**
+* **Your Answer:** make your `module.exports` an object consisting of key:value pairs for the variables you are attempting to export. 
 
 ---
 
@@ -135,7 +140,7 @@ $ npm -v
 
 * **Question:** What is `path` and where does it come from?
 
-* **Your Answer:**
+* **Your Answer:** `path` appears to be a function for obtaining the path of a file within the project file structure. 
 
 ---
 
@@ -143,7 +148,7 @@ $ npm -v
 
 * **Question:** What command can you run to install this package?
 
-* **Your Answer:**
+* **Your Answer:** `npm install moment`
 
 ---
 
@@ -151,7 +156,7 @@ $ npm -v
 
 * **Question:** Do you need to use a `./` to require the package? Why or why not?
 
-* **Your Answer:**
+* **Your Answer:** No, not if the module is within the node_modules directory. Node defaults to checking that folder for a package first. 
 
 ---
 
