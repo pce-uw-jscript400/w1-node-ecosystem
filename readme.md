@@ -54,7 +54,7 @@ $ npm -v
 
 * **Question:** What is the purpose of the following keys? "name", "scripts", "license"
 
-* **Your Answer:**
+* **Your Answer:** Name is the title of your package, scripts are a way to shorthand a CLI command or commands for the project, and license is for applying a license to your package that establishes the rules for reuse of your package.
 
 ---
 
@@ -78,7 +78,7 @@ $ npm -v
 
 * **Question:** What happens and how is this related to what is in the `package.json` file? 
 
-* **Your Answer:** It runs the script for "test" and returns the string defined as the value on the test key:value pair. 
+* **Your Answer:** It runs the CLI command in the key:value pair for "test" under the scripts key in package.json. In this case, it echos the string and exits.
 
 ---
 
@@ -94,7 +94,7 @@ $ npm -v
 
 * **Question:** The same pattern will not work to try and run this script. How can you successfully get this script to run?
 
-* **Your Answer:** `npm run-script my-file`
+* **Your Answer:** `npm run my-file`
 
 ---
 
@@ -116,6 +116,7 @@ $ npm -v
   Hello, Node!
   Colin Griffiths
 ```
+  The imported value from the exported string is displayed as it is assigned to the variable profile. 
 
 * **Question:** What is `module.exports` and what is its _type_ in JavaScript? What is `require` and what is its _type_ in JavaScript?
 
