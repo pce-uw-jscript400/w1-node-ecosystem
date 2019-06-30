@@ -39,6 +39,7 @@ $ npm -v
 * **Question:** What is the difference between forking and cloning a repository as opposed to just cloning a repository?
 
 * **Your Answer:**
+Forking creates a separate copy of the whole repo under a different user, where as cloning is just making a copy, if it is done without forking, it just means that you would like to work on it separately
 
 ---
 
@@ -46,7 +47,8 @@ $ npm -v
 
 * **Question:** What does `npm init` do? How does the `-y` flag modify that command?
 
-* **Your Answer:**
+* **Your Answer:** Creates a pacakage.json file and then outputs the same. The -y flag says yes to all
+the questions.
 
 ---
 
@@ -54,7 +56,10 @@ $ npm -v
 
 * **Question:** What is the purpose of the following keys? "name", "scripts", "license"
 
-* **Your Answer:**
+* **Your Answer:** name = name of your project
+scripts = scripts that are used as a part of any commands that you would run from your command line
+It can be npm commands , react commands etc etc
+licesne = open source licsense or any other custom licesnse that you want to use for your application
 
 ---
 
@@ -62,7 +67,7 @@ $ npm -v
 
 * **Question:** What is the purpose of the `.gitignore` file? What is the significance of a "dot-file?"
 
-* **Your Answer:**
+* **Your Answer:** Used to store stuff that is not uploaded. Usually used to store API Keys etc, basically private stuff
 
 ---
 
@@ -70,7 +75,7 @@ $ npm -v
 
 * **Question:** From the command line, how can you run this file?
 
-* **Your Answer:**
+* **Your Answer:** Node index.js will run this file
 
 ---
 
@@ -78,7 +83,7 @@ $ npm -v
 
 * **Question:** What happens and how is this related to what is in the `package.json` file? 
 
-* **Your Answer:**
+* **Your Answer:** No test specified error is thrown and it outputs/echos the details in the pacakge.json file
 
 ---
 
@@ -86,7 +91,7 @@ $ npm -v
 
 * **Question:** What will you enter on the command line to run that script?
 
-* **Your Answer:**
+* **Your Answer:** npm start
 
 ---
 
@@ -94,7 +99,7 @@ $ npm -v
 
 * **Question:** The same pattern will not work to try and run this script. How can you successfully get this script to run?
 
-* **Your Answer:**
+* **Your Answer:** npm run my-file if we are using standard npm commands we dont need run, else we need to specify run
 
 ---
 
@@ -111,11 +116,11 @@ $ npm -v
 
 * **Question:** What gets logged? Why?
 
-* **Your Answer:**
+* **Your Answer:** Hello World is logged first followed by my name. Exported the code from outside of index.js and pulled in the code into index.js and executed the same
 
 * **Question:** What is `module.exports` and what is its _type_ in JavaScript? What is `require` and what is its _type_ in JavaScript?
 
-* **Your Answer:**
+* **Your Answer:** require is a function type and module.exports is a special object
 
 ---
 
@@ -123,7 +128,7 @@ $ npm -v
 
 * **Question:** What are some ways you can solve this problem?
 
-* **Your Answer:**
+* **Your Answer:** Package everything you need into an object and export/import the same
 
 ---
 
@@ -135,7 +140,7 @@ $ npm -v
 
 * **Question:** What is `path` and where does it come from?
 
-* **Your Answer:**
+* **Your Answer:** Path comes with node. since there is no ./ it is not something we created but something that comes as a module built in with node
 
 ---
 
@@ -143,7 +148,7 @@ $ npm -v
 
 * **Question:** What command can you run to install this package?
 
-* **Your Answer:**
+* **Your Answer:** npm install moment
 
 ---
 
@@ -151,7 +156,8 @@ $ npm -v
 
 * **Question:** Do you need to use a `./` to require the package? Why or why not?
 
-* **Your Answer:**
+* **Your Answer:** Since this is not a file we dont need ./. Since we are using a package we dont need
+to use ./
 
 ---
 
