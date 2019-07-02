@@ -40,6 +40,8 @@ $ npm -v
 
 * **Your Answer:**
 
+Forking a repository moves it to a new repository and cloning a repository gives you a local copy.
+
 ---
 
 - [ ] Run `npm init -y` from the command line
@@ -47,6 +49,8 @@ $ npm -v
 * **Question:** What does `npm init` do? How does the `-y` flag modify that command?
 
 * **Your Answer:**
+
+`npm init` creates a package.json file. If the `-y` is included it generates the file without asking any questions.
 
 ---
 
@@ -56,6 +60,12 @@ $ npm -v
 
 * **Your Answer:**
 
+name: is the project name
+
+scripts: scripts that are called
+
+license: is the license type that you are giving to your project
+
 ---
 
 - [ ] Create a `.gitignore` file
@@ -63,6 +73,10 @@ $ npm -v
 * **Question:** What is the purpose of the `.gitignore` file? What is the significance of a "dot-file?"
 
 * **Your Answer:**
+
+.gitignore files are used to exclude certain things like a specific file, or file extensions, or anything you don't want exposed.
+
+The "dot-file" means that the file is a hidden file.
 
 ---
 
@@ -72,6 +86,8 @@ $ npm -v
 
 * **Your Answer:**
 
+node index.js
+
 ---
 
 - [ ] Run `npm test` from the command line
@@ -79,6 +95,8 @@ $ npm -v
 * **Question:** What happens and how is this related to what is in the `package.json` file? 
 
 * **Your Answer:**
+
+No current test but it would check package.json scripts for tests.
 
 ---
 
@@ -88,6 +106,8 @@ $ npm -v
 
 * **Your Answer:**
 
+npm run start
+
 ---
 
 - [ ] Change the name of your "start" script to "my-file"
@@ -95,6 +115,8 @@ $ npm -v
 * **Question:** The same pattern will not work to try and run this script. How can you successfully get this script to run?
 
 * **Your Answer:**
+
+npm run my-file
 
 ---
 
@@ -113,9 +135,13 @@ $ npm -v
 
 * **Your Answer:**
 
+'<your-name>'
+
 * **Question:** What is `module.exports` and what is its _type_ in JavaScript? What is `require` and what is its _type_ in JavaScript?
 
 * **Your Answer:**
+
+`require` is a function and `module.exports` is an object.
 
 ---
 
@@ -124,6 +150,11 @@ $ npm -v
 * **Question:** What are some ways you can solve this problem?
 
 * **Your Answer:**
+
+const name = 'Erik'
+const age = '35'
+
+module.exports = {age, name}
 
 ---
 
@@ -137,6 +168,8 @@ $ npm -v
 
 * **Your Answer:**
 
+path is the directory that the file is located in and it comes from node.
+
 ---
 
 - [ ] Install the [moment](https://www.npmjs.com/package/moment) package
@@ -145,6 +178,8 @@ $ npm -v
 
 * **Your Answer:**
 
+npm install moment
+
 ---
 
 - [ ] On your own, use this package in the `index.js` file
@@ -152,6 +187,8 @@ $ npm -v
 * **Question:** Do you need to use a `./` to require the package? Why or why not?
 
 * **Your Answer:**
+
+No, you do not need to use `./` to require a package because it's not a file.
 
 ---
 
