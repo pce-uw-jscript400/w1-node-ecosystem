@@ -1,0 +1,25 @@
+{
+  "name": "w1-node-ecosystem",
+  "version": "1.0.0",
+  "description": "Welcome to JSCRIPT 400 - Server Side Development with JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Hello world, the test is failing!!!\" && exit 1",
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tworkman512/w1-node-ecosystem.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tworkman512/w1-node-ecosystem/issues"
+  },
+  "homepage": "https://github.com/tworkman512/w1-node-ecosystem#readme",
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
+}
