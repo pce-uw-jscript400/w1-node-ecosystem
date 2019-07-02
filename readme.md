@@ -55,7 +55,7 @@ _creating package.json and -y saying yes to everything_
 * **Question:** What is the purpose of the following keys? "name", "scripts", "license"
 
 * **Your Answer:**
-  _scripts: scripts is responsible for a unit of work. This way they can be called from other scripts._
+  _scripts: script is responsible for a unit of work. This way they can be called from other scripts._
   _names: It's just the name of the repository and should be descriptive name based on the project._
   _Licenses: For your repository to truly be open source, you'll need to license it so that others are free to use, change, and distribute the software._
 
@@ -65,7 +65,8 @@ _creating package.json and -y saying yes to everything_
 
 * **Your Answer:**
 
-**_file that we don't want to keep trak of them in the reposetori_**
+_file that we don't want to keep trak of them in the reposetori_
+_It works anywhere, but its primary use is to hide configuration files in the home directory_
 
 - [ ] Create an `index.js` file with the following contents: `console.log('Hello, Node!')`
 
@@ -73,7 +74,7 @@ _creating package.json and -y saying yes to everything_
 
 * **Your Answer:**
 
----
+_node index.js_
 
 - [ ] Run `npm test` from the command line
 
