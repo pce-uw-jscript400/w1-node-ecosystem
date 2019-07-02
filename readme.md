@@ -38,7 +38,7 @@ $ npm -v
 
 * **Question:** What is the difference between forking and cloning a repository as opposed to just cloning a repository?
 
-* **Your Answer:**
+* **Your Answer: Fork is a repository copy that is in your account that is linked to the original repository, while a clone is an unlinked repository copy in your account.
 
 ---
 
@@ -46,7 +46,7 @@ $ npm -v
 
 * **Question:** What does `npm init` do? How does the `-y` flag modify that command?
 
-* **Your Answer:**
+* **Your Answer:a command that bringd in the package-json into the terminal window, the -y answers "yes" to questions
 
 ---
 
@@ -54,7 +54,7 @@ $ npm -v
 
 * **Question:** What is the purpose of the following keys? "name", "scripts", "license"
 
-* **Your Answer:**
+* **Your Answer:name is the name of the project or folder, scrits are any scripts you set up such as a test scripts, and license is what allow you to use node, like an MIT or GNU license
 
 ---
 
@@ -62,7 +62,7 @@ $ npm -v
 
 * **Question:** What is the purpose of the `.gitignore` file? What is the significance of a "dot-file?"
 
-* **Your Answer:**
+* **Your Answer: it is a way to restrict files into a repository, for example you can ignore visual studio and it will not bring in any of the common vs created files, just your project files
 
 ---
 
@@ -70,7 +70,7 @@ $ npm -v
 
 * **Question:** From the command line, how can you run this file?
 
-* **Your Answer:**
+* **Your Answer: node index.js
 
 ---
 
@@ -78,7 +78,7 @@ $ npm -v
 
 * **Question:** What happens and how is this related to what is in the `package.json` file? 
 
-* **Your Answer:**
+* **Your Answer:errors, because no test is defined.. the eror message comes from package.json
 
 ---
 
@@ -86,7 +86,7 @@ $ npm -v
 
 * **Question:** What will you enter on the command line to run that script?
 
-* **Your Answer:**
+* **Your Answer:  npm start
 
 ---
 
@@ -94,7 +94,7 @@ $ npm -v
 
 * **Question:** The same pattern will not work to try and run this script. How can you successfully get this script to run?
 
-* **Your Answer:**
+* **Your Answer:add the key word 'run' between npm and the script name
 
 ---
 
@@ -111,11 +111,11 @@ $ npm -v
 
 * **Question:** What gets logged? Why?
 
-* **Your Answer:**
+* **Your Answer: the exported string, because you assign the exported string to a variable and the console log that variable
 
 * **Question:** What is `module.exports` and what is its _type_ in JavaScript? What is `require` and what is its _type_ in JavaScript?
 
-* **Your Answer:**
+* **Your Answer: require is a function that returns exported module content  module.exports is an object that is an exporter from a file
 
 ---
 
@@ -123,7 +123,7 @@ $ npm -v
 
 * **Question:** What are some ways you can solve this problem?
 
-* **Your Answer:**
+* **Your Answer: place all items in an object or array (a collection) and export that, then you can break it up later
 
 ---
 
@@ -135,7 +135,7 @@ $ npm -v
 
 * **Question:** What is `path` and where does it come from?
 
-* **Your Answer:**
+* **Your Answer: provides utilities for working with file and directory paths, it returns the current working directory
 
 ---
 
@@ -143,7 +143,7 @@ $ npm -v
 
 * **Question:** What command can you run to install this package?
 
-* **Your Answer:**
+* **Your Answer: npm install moment
 
 ---
 
@@ -151,7 +151,7 @@ $ npm -v
 
 * **Question:** Do you need to use a `./` to require the package? Why or why not?
 
-* **Your Answer:**
+* **Your Answer: only if it is within your file system
 
 ---
 
