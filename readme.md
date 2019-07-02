@@ -55,9 +55,9 @@ _creating package.json and -y saying yes to everything_
 * **Question:** What is the purpose of the following keys? "name", "scripts", "license"
 
 * **Your Answer:**
-  _scripts: script is responsible for a unit of work. This way they can be called from other scripts._
-  _names: It's just the name of the repository and should be descriptive name based on the project._
-  _Licenses: For your repository to truly be open source, you'll need to license it so that others are free to use, change, and distribute the software._
+  _scripts: scripts are written as usual JSON key-value pairs where the key is the name of the script and the value contains the script you want to execute._
+  _names: It's just the name of the project._
+  _Licenses: you'll need to license it so that others are free to use, change, and distribute the software._
 
 - [ ] Create a `.gitignore` file
 
@@ -82,7 +82,7 @@ _node index.js_
 
 * **Your Answer:**
 
----
+_result is "Error: no test specified"_
 
 - [ ] Create a new "script" command called "start" that has the following value: `node index.js`
 
@@ -90,7 +90,7 @@ _node index.js_
 
 * **Your Answer:**
 
----
+_Start node index.js_
 
 - [ ] Change the name of your "start" script to "my-file"
 
@@ -98,7 +98,7 @@ _node index.js_
 
 * **Your Answer:**
 
----
+_npm my-file will not work since it's not standard npm command to make it work we need to add " run " key word_
 
 - [ ] Create a new file called `profile.js`. Inside the file, copy the following but replace `<your-name>` with your name:
 
@@ -116,12 +116,13 @@ _node index.js_
 * **Question:** What gets logged? Why?
 
 * **Your Answer:**
+  _My name was logged because we just connected different files using "export" and "require" keywords_
 
 * **Question:** What is `module.exports` and what is its _type_ in JavaScript? What is `require` and what is its _type_ in JavaScript?
 
 * **Your Answer:**
 
----
+_The type of module.export is an object and "require" is function_
 
 - [ ] We can only export one thing from files when using Node. With that said, export both your name and your birthday from the `profile.js` file.
 
@@ -129,7 +130,7 @@ _node index.js_
 
 * **Your Answer:**
 
----
+_We can use an array or an object and then export the whole object_
 
 - [ ] Add the following to your `index.js` file. Then, run your file.
   ```js
@@ -141,7 +142,7 @@ _node index.js_
 
 * **Your Answer:**
 
----
+_path is a module that comes with node.js when you install it_
 
 - [ ] Install the [moment](https://www.npmjs.com/package/moment) package
 
@@ -149,7 +150,7 @@ _node index.js_
 
 * **Your Answer:**
 
----
+_npm install moment_
 
 - [ ] On your own, use this package in the `index.js` file
 
@@ -157,7 +158,7 @@ _node index.js_
 
 * **Your Answer:**
 
----
+_No, because we don't have moment file and we pull it from package_
 
 - [ ] Move your `profile.js` file into a `src/` folder. Update the path in your `index.js` file to ensure everything continues to work.
 

@@ -1,0 +1,27 @@
+{
+  "name": "w1-node-ecosystem",
+  "version": "1.0.0",
+  "description": "Welcome to JSCRIPT 400 - Server Side Development with JavaScript",
+  "main": "index.js",
+  "dependencies": {
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "my-file": "node index.js",
+    "start": "node index.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shahab13/w1-node-ecosystem.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shahab13/w1-node-ecosystem/issues"
+  },
+  "homepage": "https://github.com/Shahab13/w1-node-ecosystem#readme"
+}
