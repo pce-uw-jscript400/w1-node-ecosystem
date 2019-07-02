@@ -46,7 +46,7 @@ $ npm -v
 
 * **Question:** What does `npm init` do? How does the `-y` flag modify that command?
 
-* **Your Answer:** `npm init` creates the package.json file for the project? Don't know what the -y flag does.
+* **Your Answer:** `npm init` prompts you for values to put into the package.json file before it is created in your project folder. The `-y` flag simply creates the package.json for you with default values.
 
 ---
 
@@ -111,7 +111,7 @@ $ npm -v
 
 * **Question:** What gets logged? Why?
 
-* **Your Answer:** My name.
+* **Your Answer:** My name. Because my name is being exported out of the profile.js and imported using the function `require` inside the index.js file.
 
 * **Question:** What is `module.exports` and what is its _type_ in JavaScript? What is `require` and what is its _type_ in JavaScript?
 
@@ -123,7 +123,7 @@ $ npm -v
 
 * **Question:** What are some ways you can solve this problem?
 
-* **Your Answer:** placing both my name and birthday into an object and exporting that object.
+* **Your Answer:** Placing both my name and birthday into an object and exporting that object.
 
 ---
 
