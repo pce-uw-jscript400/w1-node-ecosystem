@@ -1,2 +1,2 @@
-module.exports = 'Michael Munsey'
+module.exports = {'name': 'Michael Munsey', 'birthday': 'July 12'}
 
