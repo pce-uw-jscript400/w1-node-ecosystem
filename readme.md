@@ -38,7 +38,7 @@ $ npm -v
 
 * **Question:** What is the difference between forking and cloning a repository as opposed to just cloning a repository?
 
-* **Your Answer:**
+* **Your Answer:** Forking allows me to create a duplicate project in my own (eg. Github) space where I control the permissions. Simply cloning another person's project may not allow me to push my changes back to the origin.
 
 ---
 
@@ -46,7 +46,7 @@ $ npm -v
 
 * **Question:** What does `npm init` do? How does the `-y` flag modify that command?
 
-* **Your Answer:**
+* **Your Answer:** Creates the nessecary setup for a node project, namely the package.json file.  -y accepts all the defaults without interaction.
 
 ---
 
@@ -55,6 +55,9 @@ $ npm -v
 * **Question:** What is the purpose of the following keys? "name", "scripts", "license"
 
 * **Your Answer:**
+** name: required; if your project becomes the dependency of another project it will be called by "name"
+** scripts: scripts that can be run on the project with the npm command.  This can be important if your code is deployed, for example a CI/CD pipeline needs to know how to run your tests, and a hosting site needs to know how to run your code.
+** license: any restrictions you have on the use of your code goes here.  There are some standard, particularly open source licenses that you can use, or you can create a custom license.
 
 ---
 
@@ -62,7 +65,7 @@ $ npm -v
 
 * **Question:** What is the purpose of the `.gitignore` file? What is the significance of a "dot-file?"
 
-* **Your Answer:**
+* **Your Answer:** dot files don't show up under ls, and are normally used for settings.  .gitignore lists file or path patterns of files that will not be committed to the repo.  Examples are files that contain secrets, build files, and runtime files.
 
 ---
 
@@ -70,7 +73,7 @@ $ npm -v
 
 * **Question:** From the command line, how can you run this file?
 
-* **Your Answer:**
+* **Your Answer:** node index.js
 
 ---
 
@@ -78,7 +81,7 @@ $ npm -v
 
 * **Question:** What happens and how is this related to what is in the `package.json` file? 
 
-* **Your Answer:**
+* **Your Answer:** "Error: no test specified" npm ERR! Test failed.  The "test" script is run.  If you have actual tests you should modify the test script to run them.
 
 ---
 
@@ -86,7 +89,7 @@ $ npm -v
 
 * **Question:** What will you enter on the command line to run that script?
 
-* **Your Answer:**
+* **Your Answer:** npm start
 
 ---
 
@@ -94,7 +97,7 @@ $ npm -v
 
 * **Question:** The same pattern will not work to try and run this script. How can you successfully get this script to run?
 
-* **Your Answer:**
+* **Your Answer:** npm run my-file.  Start is a reserved word and takes no arguments (file name).
 
 ---
 
@@ -111,11 +114,11 @@ $ npm -v
 
 * **Question:** What gets logged? Why?
 
-* **Your Answer:**
+* **Your Answer:** My name.  require imports the code from profile.js into the running process.
 
-* **Question:** What is `module.exports` and what is its _type_ in JavaScript? What is `require` and what is its _type_ in JavaScript?
+* **Question:** What is `module.exports` and what is its _type_ in JavaScript? What is `require` and what is its _type_ in JavaScript?  
 
-* **Your Answer:**
+* **Your Answer:** module.exports is an object and makes the object accessible to other modules.  require is a function, and is used to import other files or modules.
 
 ---
 
@@ -123,7 +126,7 @@ $ npm -v
 
 * **Question:** What are some ways you can solve this problem?
 
-* **Your Answer:**
+* **Your Answer:**  Wrap multiple things into an object or array.
 
 ---
 
@@ -135,7 +138,7 @@ $ npm -v
 
 * **Question:** What is `path` and where does it come from?
 
-* **Your Answer:**
+* **Your Answer:** A utility for working with file paths (directories).  It is part of the default node package.
 
 ---
 
@@ -143,7 +146,7 @@ $ npm -v
 
 * **Question:** What command can you run to install this package?
 
-* **Your Answer:**
+* **Your Answer:** npm install moment
 
 ---
 
@@ -151,7 +154,7 @@ $ npm -v
 
 * **Question:** Do you need to use a `./` to require the package? Why or why not?
 
-* **Your Answer:**
+* **Your Answer:** no.  Only put ./ in front of files that are not imported into node_modules.
 
 ---
 
