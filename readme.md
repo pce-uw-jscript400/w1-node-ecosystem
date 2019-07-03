@@ -38,7 +38,7 @@ $ npm -v
 
 * **Question:** What is the difference between forking and cloning a repository as opposed to just cloning a repository?
 
-* **Your Answer:** When you Fork the repo then you are adding it under your repository.  Just cloning would two versions of the same repositoty.  If there
+* **Your Answer:** When you Fork the repo then you are adding it under your repository.  Just cloning would two versions of the same repository. If changes are made to the orginal repo are reflected in the fork. When you have a forked repository you must create a pull request or the changes will only be reflected on the fork.
 
 ---
 
@@ -46,7 +46,7 @@ $ npm -v
 
 * **Question:** What does `npm init` do? How does the `-y` flag modify that command?
 
-* **Your Answer:** NPM initializes the program.  The -y means "Yes," it just assumes yes and moves on.
+* **Your Answer:** npm init creates the package.json file.   The -y means "Yes," it just assumes yes and moves on.
 
 ---
 
@@ -62,7 +62,7 @@ $ npm -v
 
 * **Question:** What is the purpose of the `.gitignore` file? What is the significance of a "dot-file?"
 
-* **Your Answer:** A "dot-file" is files that are ignored.  '.gitignore' is a file where you put files that you want git to ignore, such as API keys.
+* **Your Answer:** A "dot-file" is files that are hidden from git.  '.gitignore' is a file where you put files that you want git to "ignore", such as API keys.
 
 ---
 
@@ -135,7 +135,7 @@ You would put the items in an object or an array and package them.
 
 * **Question:** What is `path` and where does it come from?
 
-* **Your Answer:** 'path' pulls in the path of the document and it is an node package that comes with node.
+* **Your Answer:** 'path' has built in methods that pulls in the path of the document and it is an node package that comes with node.
 
 ---
 
