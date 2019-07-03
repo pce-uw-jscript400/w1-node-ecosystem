@@ -78,9 +78,9 @@ license = Specifies a license for the package, to indicate how people are permit
 
 * **Your Answer:**
 
-.gitignore contains the list of files to ignore, to not include at github.  Such as npm modules, and API keys.
+* .gitignore contains the list of files to ignore, to not include at github.  For example npm modules (the node_modules directory), and API keys.
 
-. makes the file hidden, such as in Finder.
+* A dot-file is a hidden file, such as in Finder.
 
 ---
 
@@ -90,7 +90,7 @@ license = Specifies a license for the package, to indicate how people are permit
 
 * **Your Answer:**
 
-node index.js
+`node index.js`
 
 ---
 
@@ -100,14 +100,19 @@ node index.js
 
 * **Your Answer:**
 
+```
 > echo "Error: no test specified" && exit 1
 Error: no test specified
 npm ERR! Test failed. 
+```
 
-package.json contains no pointers to tests:
+`package.json` contains no pointers to tests:
+
+```
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+```
 
 ---
 
@@ -117,12 +122,13 @@ package.json contains no pointers to tests:
 
 * **Your Answer:**
 
-Enter:
-npm start
+Enter: `npm start`
 
 Output:
+```
 > node index.js
 Hello, Node!
+```
 
 ---
 
@@ -132,12 +138,13 @@ Hello, Node!
 
 * **Your Answer:**
 
-Enter:
-npm run my-file
+Enter: `npm run my-file`
 
-output:
+Output:
+```
 > node index.js
 Hello, Node!
+```
 
 ---
 
@@ -156,21 +163,25 @@ Hello, Node!
 
 * **Your Answer:**
 
-Enter: 
-node index.js
+Enter: `node index.js`
 
 Output:
+```
 Hello, Node!
 Michael Hoffman
-
+```
 
 * **Question:** What is `module.exports` and what is its _type_ in JavaScript? What is `require` and what is its _type_ in JavaScript?
 
 * **Your Answer:**
 
-JS requires an object, a function (has parens).
+`module.exports` contains functions or other objects to make available to code in other JavaScript files.
 
-require is a function.
+`module.exports` is an object.
+
+`require` imports a module.
+
+`require` is a function.
 
 ---
 
@@ -180,10 +191,12 @@ require is a function.
 
 * **Your Answer:**
 
-Wrap variables in curly braces. eg:
+Wrap variables in curly braces. For example:
+```
 const name = 'Michael'
 const age = 'kinda old'
 module.exports = { age, name }
+```
 
 ---
 
@@ -197,10 +210,9 @@ module.exports = { age, name }
 
 * **Your Answer:**
 
-Enter: 
-node index.js
+Enter: `node index.js`
 
-path is a module (a node package) that provides utilities for working with file and directory paths.  It comes with Node (there's no ./).  We didn't install any packages.
+`path` is a node package that provides utilities for working with file and directory paths.  It comes with Node (there's no ./).  We didn't install any packages.
 
 ---
 
@@ -210,11 +222,12 @@ path is a module (a node package) that provides utilities for working with file 
 
 * **Your Answer:**
 
-From https://momentjs.com/docs/#/use-it/node-js/
-Enter:
-npm install moment
+Enter: `npm install moment`
 
-node_modules folder contains the moment module.
+The `node_modules` folder contains the moment module.
+
+Docs: https://momentjs.com/docs/#/use-it/node-js/
+
 
 ---
 
@@ -224,28 +237,32 @@ node_modules folder contains the moment module.
 
 * **Your Answer:**
 
-In index.js, add:
+No, because the package is installed as an npm module, and is in package.json file.
+
+To require the package, in `index.js`, add:
+```
 const moment = require('moment')
 moment().format();
-
-Answer: No, because it is installed as an npm module, and is in package.json file.
-
+```
 
 ---
 
 - [ ] Move your `profile.js` file into a `src/` folder. Update the path in your `index.js` file to ensure everything continues to work.
+
+Commands to issue:
+```
+mkdir src
+mv profile.js src
+```
+
+In `index.js`, add:
+`const profile = require('./src/profile.js')`
+
+To test, enter: `node index.js`
+
 
 #### Resources
 
 - [Node.js Built-In Modules](https://nodejs.org/dist/latest-v12.x/docs/api/)
 - [NPM: Moment](https://www.npmjs.com/package/moment)
 
-Enter:
-mkdir src
-mv profile.js src
-
-In index.js:
-const profile = require('./src/profile.js')
-
-To test, enter:
-node index.js
