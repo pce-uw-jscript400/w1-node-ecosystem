@@ -210,9 +210,9 @@ module.exports = { age, name }
 
 * **Your Answer:**
 
-Enter: `node index.js`
-
 `path` is a node package that provides utilities for working with file and directory paths.  It comes with Node (there's no ./).  We didn't install any packages.
+
+To run the file, enter: `node index.js`
 
 ---
 
@@ -237,7 +237,7 @@ Docs: https://momentjs.com/docs/#/use-it/node-js/
 
 * **Your Answer:**
 
-No, because the package is installed as an npm module, and is in package.json file.
+No, because the package is installed as an npm module, and is in the `package.json` file.
 
 To require the package, in `index.js`, add:
 ```
@@ -265,4 +265,3 @@ To test, enter: `node index.js`
 
 - [Node.js Built-In Modules](https://nodejs.org/dist/latest-v12.x/docs/api/)
 - [NPM: Moment](https://www.npmjs.com/package/moment)
-
