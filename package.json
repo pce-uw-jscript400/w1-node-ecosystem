@@ -1,0 +1,13 @@
+{
+  "name": "Week-1",
+  "version": "1.0.0",
+  "description": "By the end of this lesson, you should be able to read, write, and update files with NodeJS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "my-file": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
