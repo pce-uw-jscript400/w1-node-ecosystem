@@ -40,6 +40,10 @@ $ npm -v
 
 * **Your Answer:**
 
+Cloning doesn't retain a link to the original repo.
+
+Forking retains a link to be able to merge commits back into the original repository.  The forked repo is monitored and compared with the original repo. 
+
 ---
 
 - [ ] Run `npm init -y` from the command line
@@ -47,6 +51,10 @@ $ npm -v
 * **Question:** What does `npm init` do? How does the `-y` flag modify that command?
 
 * **Your Answer:**
+
+Creates the package.json file.  
+
+-y inserts default values in the file.
 
 ---
 
@@ -56,6 +64,12 @@ $ npm -v
 
 * **Your Answer:**
 
+name = name of project; default is directory name
+
+scripts = any startup options, default commands you want it to autoly run.  
+
+license = Specifies a license for the package, to indicate how people are permitted to use the package.
+
 ---
 
 - [ ] Create a `.gitignore` file
@@ -63,6 +77,10 @@ $ npm -v
 * **Question:** What is the purpose of the `.gitignore` file? What is the significance of a "dot-file?"
 
 * **Your Answer:**
+
+* .gitignore contains the list of files to ignore, to not include at github.  For example npm modules (the node_modules directory), and API keys.
+
+* A dot-file is a hidden file, such as in Finder.
 
 ---
 
@@ -72,6 +90,8 @@ $ npm -v
 
 * **Your Answer:**
 
+`node index.js`
+
 ---
 
 - [ ] Run `npm test` from the command line
@@ -79,6 +99,20 @@ $ npm -v
 * **Question:** What happens and how is this related to what is in the `package.json` file? 
 
 * **Your Answer:**
+
+```
+> echo "Error: no test specified" && exit 1
+Error: no test specified
+npm ERR! Test failed. 
+```
+
+`package.json` contains no pointers to tests:
+
+```
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+```
 
 ---
 
@@ -88,6 +122,14 @@ $ npm -v
 
 * **Your Answer:**
 
+Enter: `npm start`
+
+Output:
+```
+> node index.js
+Hello, Node!
+```
+
 ---
 
 - [ ] Change the name of your "start" script to "my-file"
@@ -95,6 +137,14 @@ $ npm -v
 * **Question:** The same pattern will not work to try and run this script. How can you successfully get this script to run?
 
 * **Your Answer:**
+
+Enter: `npm run my-file`
+
+Output:
+```
+> node index.js
+Hello, Node!
+```
 
 ---
 
@@ -113,9 +163,25 @@ $ npm -v
 
 * **Your Answer:**
 
+Enter: `node index.js`
+
+Output:
+```
+Hello, Node!
+Michael Hoffman
+```
+
 * **Question:** What is `module.exports` and what is its _type_ in JavaScript? What is `require` and what is its _type_ in JavaScript?
 
 * **Your Answer:**
+
+`module.exports` contains functions or other objects to make available to code in other JavaScript files.
+
+`module.exports` is an object.
+
+`require` imports a module.
+
+`require` is a function.
 
 ---
 
@@ -124,6 +190,13 @@ $ npm -v
 * **Question:** What are some ways you can solve this problem?
 
 * **Your Answer:**
+
+Wrap variables in curly braces. For example:
+```
+const name = 'Michael'
+const age = 'kinda old'
+module.exports = { age, name }
+```
 
 ---
 
@@ -137,6 +210,10 @@ $ npm -v
 
 * **Your Answer:**
 
+`path` is a node package that provides utilities for working with file and directory paths.  It comes with Node (there's no ./).  We didn't install any packages.
+
+To run the file, enter: `node index.js`
+
 ---
 
 - [ ] Install the [moment](https://www.npmjs.com/package/moment) package
@@ -144,6 +221,13 @@ $ npm -v
 * **Question:** What command can you run to install this package?
 
 * **Your Answer:**
+
+Enter: `npm install moment`
+
+The `node_modules` folder contains the moment module.
+
+Docs: https://momentjs.com/docs/#/use-it/node-js/
+
 
 ---
 
@@ -153,9 +237,29 @@ $ npm -v
 
 * **Your Answer:**
 
+No, because the package is installed as an npm module, and is in the `package.json` file.
+
+To require the package, in `index.js`, add:
+```
+const moment = require('moment')
+moment().format();
+```
+
 ---
 
 - [ ] Move your `profile.js` file into a `src/` folder. Update the path in your `index.js` file to ensure everything continues to work.
+
+Commands to issue:
+```
+mkdir src
+mv profile.js src
+```
+
+In `index.js`, add:
+`const profile = require('./src/profile.js')`
+
+To test, enter: `node index.js`
+
 
 #### Resources
 
