@@ -1,6 +1,12 @@
-# File Interaction with Node
+# Setting up a Project with Node
 
-By the end of this lesson, you should be able to read, write, and update files with NodeJS.
+Welcome to JSCRIPT 400 - Server Side Development with JavaScript
+
+During class, we will be using repositories like these to develop skills and solidify concepts. I would recommend reading through the instructions _before_ coming to class to prime yourself to the material.
+
+Part of your homework assignment for each class will be to make a Pull Request against this repository. Your Pull Request should include answers to any questions in this document.
+
+As we work together on this during class, I would encourage you to make comments next to code we write. Explain what is happening in your own words so that later you have those notes as a reference.
 
 ## Core Learning Objective
 
@@ -8,141 +14,162 @@ By the end of this lesson, you should be able to read, write, and update files w
 
 ## Sub-Objectives
 
-* Define CRUD
-* Read from files
-* Overwrite files
-* Programmatically update files
+* Setup a basic NPM project
+* Run your project from the command line with scripts
+* Export and require your own files
+* Require and use core Node libraries
+* Install, require, and use packages from the web
 
 ### Prereqs
 
-Before starting this lesson, Fork & Clone this repository. Make sure that you can run `npm start` and that you get the following output:
-```
-Hello, Node!
+To complete this lesson, make sure that `node` and `npm` is installed and can be run from the command line. My versions of each are as follows:
+
+```bash
+$ node -v
+v12.2.0
+
+$ npm -v
+6.9.0
 ```
 
 ### Instructions & Guiding Questions
 
-- [ ] Begin by renaming `data/pets.sample.json` to `pets.json`
+- [ ] Fork & Clone this repository
 
-* **Question:** In this lesson we will be modifying the contents of the `pets.json` file. Why do you think that file appears inside of the `.gitignore` file?
-
-**Your Answer:**
-* Hidden files and git will ignore them.
-
-
-- [ ] Take a look at the NodeJS documentation for the [fs module](https://nodejs.org/api/fs.html). When looking at documentation like this it can be overwhelming to start but you likely know more than you think. Take a moment to find a few concepts you understand.
-
----
-
-- [ ] One of the most common patterns we'll come across as web developers is the concept of [CRUD](https://www.codecademy.com/articles/what-is-crud). Take a moment to define what CRUD represents.
-
-* **Question:** Imagine you have a file called `classmates.txt`. For each part of CRUD, describe how the action would interact with the file.
-
-**Your Answer:**
-* Create classmates.txt, Read classmates.txt, Update, and/or Delete
-
-- [ ] Consider the above and then look back through the [fs module](https://nodejs.org/api/fs.html) documentation.
-
-* **Question:** What methods represent each CRUD action?
+* **Question:** What is the difference between forking and cloning a repository as opposed to just cloning a repository?
 
 * **Your Answer:**
-fs.readFileSync(path[, options]) fs.writeFileSync(file, data[, options])
-fs.appendFile(path, data[, options], callback)
-fs.copyFile(src, dest[, flags], callback)
----
+ Forking is a copy of a repository.  Which allows you to make changes and test out different code without affecting the original.  Any of your contributions to the original can be add with a Pull request.
 
-- [ ] Take a look at the following two methods: [fs.readFile()](https://nodejs.org/api/fs.html#fs_fs_readfile_path_options_callback) and [fs.readFileSync()](https://nodejs.org/api/fs.html#fs_fs_readfilesync_path_options).
+ Cloned repositories are projects remotely stored.  You can create a copy of that project but cannot commit changes to the remote project unless invited to do so.
 
-* **Question:** What is the difference between these two methods?
 
-* **Your Answer:**
-fs.readFile(path[, options], callback) has two options fs.readFileSync(path[, options]) has the one.  fs.readFile() reads the contents of a file where the fs.readFileSync() returns the contents of a path.  
+- [ ] Run `npm init -y` from the command line
 
----
-
-- [ ] Take a look at [fs.writeFile()](https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback) and [fs.appendFile()](https://nodejs.org/api/fs.html#fs_fs_appendfile_path_data_options_callback).
-
-* **Question:** Describe the difference between these two methods.
+* **Question:** What does `npm init` do? How does the `-y` flag modify that command?
 
 * **Your Answer:**
-fs.writeFile() will over write the current data and fs.appendFile() will add to the current contents.
----
+Node Package Manager init will generate three properties in your project repository.  It will link  your repository 
+to your remote repo.  Add a link to bugs info.  Add a link to readme.md file.
 
-- [ ] Imagine you want to edit the middle of a file. You can use the [fs module](https://nodejs.org/api/fs.html) and the JavaScript language.
+I believe the -y flag will answer Yes to any questions regarding the command.
 
-* **Question:** How would you do so?
+- [ ] Take a look at the file that was generated by the previous command
+
+* **Question:** What is the purpose of the following keys? "name", "scripts", "license"
 
 * **Your Answer:**
-I would import the json and parse the data into a variable.  Use that variable to find index as key to which information I wish to manipulate.  Then convert back to json format and use fs methods to write back to the file.
 
+"Name" appears to be the name of the remote repository.
+"Scripts" appear to be pre made functions that you can run with npm.  Like the test script.
+"License" is useful if you plan to share your repository.  The "License" will allow users to know what is permitted with your code.
 ---
 
-- [ ] In Node, you'll have access to a global variable called `__dirname`. Add the following to your `index.js` file.
+- [ ] Create a `.gitignore` file
+
+* **Question:** What is the purpose of the `.gitignore` file? What is the significance of a "dot-file?"
+
+* **Your Answer:**
+
+A "dot-file" is a hidden file.  A ".gitignore" file is a list of files to ignore when pushing files to your remote repo.
+
+
+- [ ] Create an `index.js` file with the following contents: `console.log('Hello, Node!')`
+
+* **Question:** From the command line, how can you run this file?
+
+* **Your Answer:**
+
+node index.js
+
+- [ ] Run `npm test` from the command line
+
+* **Question:** What happens and how is this related to what is in the `package.json` file? 
+
+* **Your Answer:**
+
+Running npm test will run the script "test" in the package.json file, added when I ran an npm init -y
+
+- [ ] Create a new "script" command called "start" that has the following value: `node index.js`
+
+* **Question:** What will you enter on the command line to run that script?
+
+* **Your Answer:**
+
+npm start
+
+- [ ] Change the name of your "start" script to "my-file"
+
+* **Question:** The same pattern will not work to try and run this script. How can you successfully get this script to run?
+
+* **Your Answer:**
+
+Change it back to start
+
+- [ ] Create a new file called `profile.js`. Inside the file, copy the following but replace `<your-name>` with your name:
   ```js
-  const path = require('path')
-  const petsFile = path.join(__dirname, 'data', 'pets.json')
+  module.exports = '<your-name>'
   ```
 
-* **Question:** Describe what is happening in the above code.
+  Add the following to your `index.js` file. Then, run your file.
+  ```js
+  const profile = require('./profile.js')
+  console.log(profile)
+  ```
 
-* petsFile is a variable that will have the direct path to the pets.json file based on index.js relative path.  So the _dirname = data since data is the folder relative to index.js and pets.json is the file of the directory/name "data".  The join method is combining the directory path, folder name, and file name.
+* **Question:** What gets logged? Why?
 
-### Exercise
+* **Your Answer:**
 
-You now have the knowledge needed to edit files on your file system. **A note of caution:** this means you have the ability to delete files programmatically from your machine. That can be pretty dangerous! In this exercise and class, we will never be deleting any files programmatically. If you ever find yourself in a situation where you do need to do so, be careful.
+My Name
 
-For the rest of the time we have, use the knowledge you've gained to build functions that will modify data inside of the `pets.json` file. You should be able to **create** new pets, **read** information about all your pets, **update** a pet's information, and **delete** a pet from your records.
+* **Question:** What is `module.exports` and what is its _type_ in JavaScript? What is `require` and what is its _type_ in JavaScript?
 
-Assuming your `pets.json` starts with one pet like so:
+* **Your Answer:**
 
-```json
-[
-  {
-    "name": "Meowser",
-    "kind": "cat",
-    "age": 3
-  }
-]
-```
+The require() functions grabs the export based on the file path I specified.
 
-You should make the following functions and they should return the values that are commented out.
+It's an object.
 
-```js
-console.log(read())
-// [ { name: 'Meowser', kind: 'cat', age: 3 } ]
+- [ ] We can only export one thing from files when using Node. With that said, export both your name and your birthday from the `profile.js` file.
 
-console.log(create('Duchess', 'bird', 2))
-// [
-//   { name: 'Meowser', kind: 'cat', age: 3 },
-//   { name: 'Duchess', kind: 'bird', age: 2 }
-// ]
+* **Question:** What are some ways you can solve this problem?
 
-console.log(create('Duchess', 'bird', 2))
-// "Duchess" is already a pet!
+* **Your Answer:**
 
-console.log(remove('Snoopy'))
-// No pet found by the name of "Snoopy"
+I created an array object containing both my name and birth date. BooYaah
 
-console.log(remove('Duchess'))
-// { name: 'Duchess', kind: 'bird', age: 2 }
+- [ ] Add the following to your `index.js` file. Then, run your file.
+  ```js
+  const path = require('path')
+  console.log(path.resolve())
+  ```
 
-console.log(read())
-// [ { name: 'Meowser', kind: 'cat', age: 3 } ]
+* **Question:** What is `path` and where does it come from?
 
-console.log(update('Duchess', 'bird', 3))
-// No pet found by the name of "Duchess"
+* **Your Answer:**
 
-console.log(update('Meowser', 'cat', 4))
-// { name: 'Meowser', kind: 'cat', age: 4 }
+The relative path to your index.js.  path is a built in function of npm or most terminals for that matter.
 
-console.log(read())
-// [ { name: 'Meowser', kind: 'cat', age: 4 } ]
+- [ ] Install the [moment](https://www.npmjs.com/package/moment) package
 
-console.log(update('Meowser', 'cat', 3))
-// { name: 'Meowser', kind: 'cat', age: 3 }
-```
+* **Question:** What command can you run to install this package?
+
+* **Your Answer:**
+
+npm i "package name"
+
+- [ ] On your own, use this package in the `index.js` file
+
+* **Question:** Do you need to use a `./` to require the package? Why or why not?
+
+* **Your Answer:**
+It's added to your package.json file.
+
+
+- [ ] Move your `profile.js` file into a `src/` folder. Update the path in your `index.js` file to ensure everything continues to work.
 
 #### Resources
 
-* [NodeJS: File System](https://nodejs.org/api/fs.html)
-* [Codecademy: What is CRUD?](https://www.codecademy.com/articles/what-is-crud)
+- [Node.js Built-In Modules](https://nodejs.org/dist/latest-v12.x/docs/api/)
+- [NPM: Moment](https://www.npmjs.com/package/moment)
