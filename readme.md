@@ -1,10 +1,6 @@
 # Setting up a Project with Node
 
-<<<<<<< HEAD
-Welcome to JSCRIPT 400 - Server Side Development with JavaScript
-=======
 Welcome to JSCRIPT 400 - Back-End Development with JavaScript
->>>>>>> Initial commit with instructions
 
 During class, we will be using repositories like these to develop skills and solidify concepts. I would recommend reading through the instructions _before_ coming to class to prime yourself to the material.
 
